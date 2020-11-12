@@ -2,38 +2,90 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchinput{
+  background: rgba(255,255,255,19%);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-left: 1px solid rgba(255,255,255,.4);
+  border-top: 1px solid rgba(255,255,255,.4);
+  border-bottom: 1px solid rgba(255,255,255,.4);
+  border-right: transparent;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  outline: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.searchButton{
+  background: rgba(255,255,255,19%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-right: 1px solid rgba(255,255,255,.4);
+  border-top: 1px solid rgba(255,255,255,.4);
+  border-bottom: 1px solid rgba(255,255,255,.4);
+  border-left: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  color: rgba(255,255,255,.8);
+  cursor: pointer;
 }
 
-.App-header {
-  min-height: 100vh;
+.search{
+  display: inline-grid;
+  grid-template-columns: auto 50px;
+  width: 700px;
+  margin: 20px auto 10px auto;
+}
+
+.card{
+  height: 410px;
+  width: 180px;
+  margin: 10px;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+  font-weight: 600;
+  font-family: cursive;
+}
+
+.cardImage{
+  width: auto;
+}
+
+.cardsGroup{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.cardTitle{
+  height: 40px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #343434;
+  font-weight: 700;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px)
-  }
-  100% {
-    transform: translateY(0px)
-  }
+.imagesrc{
+  height: 340px;
+}
+
+.button{
+  background: rgba(255,255,255,19%);
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 2px;
+  cursor: pointer;
+  border-radius: 8px;
 }
